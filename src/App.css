@@ -1,0 +1,45 @@
+:root {
+  --text-color: #0F2248;
+  --bg-color: #F0F1F7;
+}
+
+
+body {
+  text-align: center;
+  color: var(--text-color);
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--bg-color);
+  overflow: auto;
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul { margin: 0; padding: 0; list-style: none;}
+
+h1 {
+  font-family: lust-script-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  margin: 0
+}
+
+li {
+  text-transform: uppercase;
+  font-size: 1.325rem;
+}
