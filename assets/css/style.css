@@ -5,6 +5,9 @@
 :root {
     --text-color: #0F2248;
     --bg-color: #F0F1F7;
+    --bg-fade-1: #e684ae;
+    --bg-fade-2: #79cbca;
+    --bg-fade-3: #77a1d3;
   }
   
   
@@ -21,8 +24,25 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: var(--bg-fade-3);
+    background: -webkit-linear-gradient(to right, var(--bg-fade-1), var(--bg-fade-2), var(--bg-fade-3));
+    background: linear-gradient(to right, var(--bg-fade-1), var(--bg-fade-2), var(--bg-fade-3));
+    animation: bgfade 15s ease infinite;
+    background-size: 400%;
   }
   
+@keyframes bgfade {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
   header {
     background: var(--bg-color);
     overflow: auto;
@@ -32,6 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 2px;
   }
   
   ul { margin: 0; padding: 0; list-style: none;}
