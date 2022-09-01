@@ -8,19 +8,18 @@
     --bg-fade-1: #e684ae;
     --bg-fade-2: #79cbca;
     --bg-fade-3: #77a1d3;
-  }
-  
-  
-  body {
+}
+
+body {
     margin: 0;
     text-align: center;
     color: var(--text-color);
     font-family: josefin-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .a {
+}
+
+.a {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -29,8 +28,8 @@
     background: linear-gradient(to right, var(--bg-fade-1), var(--bg-fade-2), var(--bg-fade-3));
     animation: bgfade 15s ease infinite;
     background-size: 400%;
-  }
-  
+}
+
 @keyframes bgfade {
     0% {
         background-position: 0 50%;
@@ -43,7 +42,7 @@
     }
 }
 
-  header {
+header {
     background: var(--bg-color);
     overflow: auto;
     margin: 1rem;
@@ -53,33 +52,34 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 2px;
-  }
-  
-  ul { margin: 0; padding: 0; list-style: none;}
-  
-  h1 {
+    color: var(--text-color);
+    mix-blend-mode: lighten;
+    background-color: #fff;
+}
+
+ul { margin: 0; padding: 0; list-style: none;}
+
+h1 {
     font-family: lust-script-display, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 8rem;
-    margin: 0;
-    line-height: normal;
-    transition: font-size .3s ease;
-  }
-  
-  li {
+    margin: 0
+}
+
+li {
     text-transform: uppercase;
     font-size: 1.325rem;
     line-height: 1.2;
-  }
+}
 
-  @media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     h1 {
         font-size: 4rem;
         line-height: 1;
+        margin-bottom: 1rem;
     }
-    ul {margin-top: .5rem;}
     li {
         font-size: 1rem;
     }
-  }
+}
